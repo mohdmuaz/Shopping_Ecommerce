@@ -4,8 +4,9 @@ const HeroSection = () => {
   return (
     <div className="bg-gray-800 bg-opacity-90">
       <div
-        className="w-full h-screen bg-cover bg-no-repeat bg-right shadow-lg bg-[url('./Page/images/watch2.png')]"
+        className="w-full h-screen bg-cover bg-no-repeat bg-right shadow-lg"
         style={{
+          backgroundImage: `url('/src/Pages/images/watch2.png')`,
           backgroundPosition: '80%',
         }}
       >
