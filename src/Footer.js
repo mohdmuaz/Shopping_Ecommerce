@@ -22,19 +22,19 @@ const Footer = () => {
               <h4 className="text-xl mb-4">Useful Links</h4>
               <ul className="text-gray-400 space-y-2">
                 <li>
-                  <a href="#" className="hover:text-yellow-500">Home</a>
+                  <a href="#" className="hover:text-yellow-500 no-underline">Home</a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-yellow-500">About us</a>
+                  <a href="#" className="hover:text-yellow-500 no-underline">About us</a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-yellow-500">Services</a>
+                  <a href="#" className="hover:text-yellow-500 no-underline">Services</a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-yellow-500">Terms of service</a>
+                  <a href="#" className="hover:text-yellow-500 no-underline">Terms of service</a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-yellow-500">Privacy policy</a>
+                  <a href="#" className="hover:text-yellow-500 no-underline">Privacy policy</a>
                 </li>
               </ul>
             </div>
@@ -44,19 +44,19 @@ const Footer = () => {
               <h4 className="text-xl mb-4">Our Services</h4>
               <ul className="text-gray-400 space-y-2">
                 <li>
-                  <a href="#" className="hover:text-yellow-500">T-Shirt</a>
+                  <a href="#" className="hover:text-yellow-500 no-underline">T-Shirt</a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-yellow-500">Shoes</a>
+                  <a href="#" className="hover:text-yellow-500 no-underline">Shoes</a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-yellow-500">Pants</a>
+                  <a href="#" className="hover:text-yellow-500 no-underline">Pants</a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-yellow-500">Laptop</a>
+                  <a href="#" className="hover:text-yellow-500 no-underline">Laptop</a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-yellow-500">Smart Phone</a>
+                  <a href="#" className="hover:text-yellow-500 no-underline">Smart Phone</a>
                 </li>
               </ul>
             </div>
@@ -98,7 +98,7 @@ const Footer = () => {
             </strong>. All Rights Reserved
           </div>
           <div className="credits">
-            Designed by <a href="#" className="text-yellow-500">SA coding</a>
+            Designed by <a href="#" className="text-yellow-500 no-underline">Mohd Muaz</a>
           </div>
         </div>
       </div>

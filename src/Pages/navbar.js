@@ -1,13 +1,11 @@
 import React, { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import facebookIcon from "./images/facebook.png";
 import twitterIcon from "./images/twitter.png";
 import googleIcon from "./images/google.png";
 import shopIcon from "./images/shop.png";
-
-
-import Tshirt from './Tshirts';
 
 const NavbarPage = ({
   onScrollToHome,
@@ -25,7 +23,7 @@ const NavbarPage = ({
   const handleModalToggle = (type) => {
     setIsLogin(type === "login");
     setIsModalOpen(true);
-    setSuccessMessage(""); // Reset success message when reopening modal
+    setSuccessMessage(""); 
   };
 
   const handleSuccess = () => {
@@ -34,10 +32,9 @@ const NavbarPage = ({
   };
 
   const handleCategoryClick = (category) => {
-    if (category === "tshirt") {
-      navigate("/tshirt"); // Navigate to the TShirt page
+    if (category === "Tshirts") {
+      navigate("/Tshirts"); 
     } else {
-      // Handle other categories or navigation logic if needed
       alert(`Navigate to category: ${category}`);
     }
   };
@@ -114,60 +111,41 @@ const NavbarPage = ({
                   </button>
                   {/* Categories List */}
                   <div>
-                    <button
-                      className="block px-4 py-2 text-black hover:bg-yellow-500 hover:text-white font-bold transition w-full text-left"
-                      onClick={() => handleCategoryClick('./Tshirts')}
-                    >
-                      T-Shirts
-                    </button>
-                    <button
-                      className="block px-4 py-2 text-black hover:bg-yellow-500 hover:text-white font-bold transition w-full text-left"
-                      onClick={() => handleCategoryClick("shoes")}
-                    >
-                      Shoes
-                    </button>
-                    <button
-                      className="block px-4 py-2 text-black hover:bg-yellow-500 hover:text-white font-bold transition w-full text-left"
-                      onClick={() => handleCategoryClick("hoodies")}
-                    >
-                      Hoodies
-                    </button>
-                    <button
-                      className="block px-4 py-2 text-black hover:bg-yellow-500 hover:text-white font-bold transition w-full text-left"
-                      onClick={() => handleCategoryClick("caps")}
-                    >
-                      Caps
-                    </button>
-                    <button
-                      className="block px-4 py-2 text-black hover:bg-yellow-500 hover:text-white font-bold transition w-full text-left"
-                      onClick={() => handleCategoryClick("pants")}
-                    >
-                      Pants
-                    </button>
-                    <button
-                      className="block px-4 py-2 text-black hover:bg-yellow-500 hover:text-white font-bold transition w-full text-left"
-                      onClick={() => handleCategoryClick("laptops")}
-                    >
-                      Laptops
-                    </button>
-                    <button
-                      className="block px-4 py-2 text-black hover:bg-yellow-500 hover:text-white font-bold transition w-full text-left"
-                      onClick={() => handleCategoryClick("keyboard")}
-                    >
-                      Keyboard
-                    </button>
-                    <button
-                      className="block px-4 py-2 text-black hover:bg-yellow-500 hover:text-white font-bold transition w-full text-left"
-                      onClick={() => handleCategoryClick("camera")}
-                    >
-                      Camera
-                    </button>
-                    <button
-                      className="block px-4 py-2 text-black hover:bg-yellow-500 hover:text-white font-bold transition w-full text-left"
-                      onClick={() => handleCategoryClick("watch")}
-                    >
-                      Watch
-                    </button>
+                  <button className="block px-4 py-2 text-black hover:bg-yellow-500 hover:text-white font-bold transition w-full text-left">
+                  <Link to="/Tshirts" className="w-full h-full block no-underline">
+                    T-Shirts
+                  </Link>
+                </button>
+                <button className="block px-4 py-2 text-black hover:bg-yellow-500 hover:text-white font-bold transition w-full text-left">
+                  <Link to="/shoes" className="w-full h-full block no-underline">
+                  shoes
+                  </Link>
+                </button>
+                <button className="block px-4 py-2 text-black hover:bg-yellow-500 hover:text-white font-bold transition w-full text-left">
+                  <Link to="/Hoodies" className="w-full h-full block no-underline">
+                    Hoodies
+                  </Link>
+                </button>
+                <button className="block px-4 py-2 text-black hover:bg-yellow-500 hover:text-white font-bold transition w-full text-left">
+                  <Link to="/PartySuits" className="w-full h-full block no-underline">
+                    Party Suit
+                  </Link>
+                </button> 
+                <button className="block px-4 py-2 text-black hover:bg-yellow-500 hover:text-white font-bold transition w-full text-left">
+                  <Link to="/Shirt" className="w-full h-full block no-underline">
+                    shirt
+                  </Link>
+                </button> 
+                <button className="block px-4 py-2 text-black hover:bg-yellow-500 hover:text-white font-bold transition w-full text-left">
+                  <Link to="/Handbag" className="w-full h-full block no-underline">
+                    handbag
+                  </Link>
+                </button> 
+                <button className="block px-4 py-2 text-black hover:bg-yellow-500 hover:text-white font-bold transition w-full text-left">
+                  <Link to="/HeelShoes" className="w-full h-full block no-underline">
+                    Heel-shoes
+                  </Link>
+                </button> 
                   </div>
                 </div>
               </li>

@@ -1,32 +1,32 @@
 import React, { useState } from 'react';
 
-import P1 from './images/p2.jpg';
-import P2 from './images/p2.jpg';
-import P3 from './images/p2.jpg';
-import P4 from './images/p2.jpg';
-import P5 from './images/p2.jpg';
-import P6 from './images/p2.jpg';
-import P7 from './images/p2.jpg';
-import P8 from './images/p2.jpg';
+import P1 from './images/p7.png';
+import P2 from './images/p7.png';
+import P3 from './images/p7.png';
+import P4 from './images/p7.png';
+import P5 from './images/p7.png';
+import P6 from './images/p7.png';
+import P7 from './images/p7.png';
+import P8 from './images/p7.png';
 
 
-const Tshirts = () => {
+const Shoes = () => {
   const products = [
-    { id: 1, title: "Dark Black T-Shirt", price: "Price: $45.99", image: P1, rating: 5, description: "A smart and elegant formal shirt. Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old." },
+    { id: 1, title: "Sport Shoes", price: "Price: $45.99", image: P1, rating: 5, description: "A smart and elegant formal shirt. Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old." },
 
-    { id: 2, title: "Dark Black T-Shirt", price: "Price: $200.50", image: P2, rating: 3, description: "A stylish and comfortable black t-shirt. Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old." },
+    { id: 2, title: "Sport Shoes", price: "Price: $200.50", image: P2, rating: 3, description: "A stylish and comfortable black t-shirt. Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old." },
 
-    { id: 3, title: "Dark Black T-Shirt", price: "Price: $500.60", image: P3, rating: 4, description: "A cozy hoodie perfect for winter. Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old." },
+    { id: 3, title: "Sport Shoes", price: "Price: $500.60", image: P3, rating: 4, description: "A cozy hoodie perfect for winter. Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old." },
 
-    { id: 4, title: "Dark Black T-Shirt", price: "Price: $300.70", image: P4, rating: 5, description: "A fashionable suit for parties and events. Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old." },
+    { id: 4, title: "Sport Shoes", price: "Price: $300.70", image: P4, rating: 5, description: "A fashionable suit for parties and events. Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old." },
 
-    { id: 5, title: "Dark Black T-Shirt", price: "Price: $500.10", image: P5, rating: 5, description: "Durable and stylish sport shoes for active use. Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old." },
+    { id: 5, title: "Sport Shoes", price: "Price: $500.10", image: P5, rating: 5, description: "Durable and stylish sport shoes for active use. Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old." },
 
-    { id: 6, title: "Dark Black T-Shirt", price: "Price: $60.50", image: P6, rating: 3, description: "A beautiful handbag for daily use. Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old." },
+    { id: 6, title: "Sport Shoes", price: "Price: $60.50", image: P6, rating: 3, description: "A beautiful handbag for daily use. Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old." },
 
-    { id: 7, title: "Dark Black T-Shirt", price: "Price: $1000.50", image: P7, rating: 3, description: "Premium quality sport shoes for professionals. Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old." },
+    { id: 7, title: "Sport Shoes", price: "Price: $1000.50", image: P7, rating: 3, description: "Premium quality sport shoes for professionals. Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old." },
 
-    { id: 8, title: "Dark Black T-Shirt", price: "Price: $100.50", image: P8, rating: 5, description: "Elegant heels for special occasions. Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old." },
+    { id: 8, title: "Sport Shoes", price: "Price: $100.50", image: P8, rating: 5, description: "Elegant heels for special occasions. Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old." },
   ];
 
   const [modalProduct, setModalProduct] = useState(null);
@@ -63,7 +63,7 @@ const Tshirts = () => {
         )
       );
     } else {
-      setCart([...cart, { product, quantity: 1 }]); // Initialize with quantity 1
+      setCart([...cart, { product, quantity: 0 }]); // Initialize with quantity 1
     }
   };
 
@@ -94,7 +94,7 @@ const Tshirts = () => {
             ? { ...item, quantity: item.quantity - 1 }
             : item
         )
-        .filter((item) => item.quantity > 0) // Remove item if quantity reaches 0
+        .filter((item) => item.quantity > 0)
     );
   };
 
@@ -106,7 +106,7 @@ const Tshirts = () => {
 
   return (
     <div className="container mx-auto mt-8">
-      <h1 className="text-3xl font-bold text-center">PRODUCTS T-SHIRTS</h1>
+      <h1 className="text-3xl font-bold text-center">PRODUCTS SHOES</h1>
 
       {/* Product Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 mt-8">
@@ -174,4 +174,4 @@ const Tshirts = () => {
   );
 };
 
-export default Tshirts;
+export default Shoes;

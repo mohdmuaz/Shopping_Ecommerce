@@ -6,13 +6,13 @@ const HeroSection = () => {
       <div
         className="w-full h-screen bg-cover bg-no-repeat bg-right shadow-lg"
         style={{
-          backgroundImage: `url('/src/Pages/images/watch2.png')`,
+          backgroundImage: ('./Pages/images/watch2.png'),
           backgroundPosition: '80%',
         }}
       >
         <div className="w-3/5 pt-52 ml-5">
-          <h1 className="text-white text-4xl font-bold drop-shadow-md">Best Deal</h1>
-          <h1 className="text-white text-4xl font-bold drop-shadow-md">Awesome Product</h1>
+          <h1 className="text-white text-4xl font-bold drop-shadow-md">Best Deals</h1>
+          <h1 className="text-white text-4xl font-bold drop-shadow-md">Awesome Products</h1>
           <p className="text-white text-lg drop-shadow-md text-left mt-4">
             Lorem ipsum dolor sit, amet consectetur adipisicing.
           </p>

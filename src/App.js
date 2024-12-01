@@ -16,15 +16,20 @@ import ContactPage from './Pages/ContactUs.js';
 import BottomIcons from './Pages/BottomIcons.js';
 import Subscribe from './Pages/Subscribe.js';
 import Footer from './Footer.js';
-import Tshirt from './Pages/Tshirts.js';
 
+import Tshirts from './Pages/Tshirts.js';
+import Shoes from './Pages/shoes.js';
+import Hoodies from './Pages/Hoodies.js';
+import PartySuit from './Pages/PartySuit.js';
+import Shirt from './Pages/Shirt.js';
+import Handbag from './Pages/Handbag.js';
+import HeelShoes from './Pages/HeelShoes.js';
 
 
 
 import Arrow from './Pages/images/arrow.png';
 
 function App() {
-  // Refs for each section
   const homeRef = useRef(null);
   const productsRef = useRef(null);
   const categoryRef = useRef(null);
@@ -46,7 +51,6 @@ function App() {
         onScrollToContact={() => scrollToSection(contactRef)}
       />
 
-      {/* Main Content with Section Refs */}
       <div ref={homeRef}>
         <Home />
       </div>
@@ -68,12 +72,18 @@ function App() {
       <BottomIcons />
       <Subscribe />
       <Footer />
-      
 
-      <Routes>
-      <Route path="./Tshirt.js" element={<Tshirt />} />
-      </Routes>
       
+    <Routes>
+      <Route path="./Pages/Tshirts.js" element={<Tshirts />} />
+      <Route path="./Pages/shoes.js'" element={<Shoes />} />
+      <Route path="./Pages/Hoodies.js" element={<Hoodies />} />
+      <Route path="./Pages/PartySuit.js" element={<PartySuit />} />
+      <Route path="./Pages/Shirt.js" element={<Shirt />} />
+      <Route path="./Pages/Handbag.js" element={<Handbag />} />
+      <Route path="./Pages/HeelShoes.js" element={<HeelShoes />} />
+    </Routes>
+
 
       {/* Scroll Arrow */}
       <a
